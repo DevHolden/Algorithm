@@ -1,4 +1,6 @@
-// 피보나치 수열(Dynamic Programming)
+/**
+ * 동적 프로그래밍을 이용한 피보나치 수열
+ */
 package DP;
 
 public class Fibonacci {
@@ -9,10 +11,10 @@ public class Fibonacci {
     }
 
     private static int fibonacci(int N) {
-        if (N==0)
+        if (N==1)
             return memoArr[N] = 1;
 
-        if (N==1)
+        if (N==2)
             return memoArr[N] = 1;
 
         return memoArr[N] = fibonacci(N-1) + fibonacci(N-2);
