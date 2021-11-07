@@ -46,9 +46,11 @@ public class Kruskal {
         arr.add(new Edge(5, 6, 27));
         arr.add(new Edge(5, 7, 25));
 
+        // 그래프의 간선들을 오름차순으로 정렬
         Collections.sort(arr);
 
         int ans = kruskal(arr);
+        // 간선 비용들의 합 출력
         System.out.println(ans);
     }
     // union-find start
